@@ -1,0 +1,7 @@
+{
+    "browser" : {
+        "windows" : "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0",
+        "macintosh" : "Mozilla/5.0 (Macintosh; Intel Mac OS X x.y; rv:84.0) Gecko/20100101 Firefox/84.0",
+        "ubuntu" : "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+    }
+}

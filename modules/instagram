@@ -1,6 +1,6 @@
 {
     "method" : "GET",
-    "url" : "https://www.instagram.com/",
+    "url" : "https://www.instagram.com/{}",
     "error" : {
         "method" : "code",
         "message" : "None"

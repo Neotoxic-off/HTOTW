@@ -1,6 +1,6 @@
 {
     "method" : "GET",
-    "url" : "https://www.youtube.com/user/",
+    "url" : "https://www.youtube.com/user/{}",
     "error" : {
         "method" : "code",
         "message" : "None"

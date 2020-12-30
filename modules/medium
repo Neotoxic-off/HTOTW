@@ -1,6 +1,6 @@
 {
     "method" : "GET",
-    "url" : "https://www.tiktok.com/@{}",
+    "url" : "https://{}.medium.com/",
     "error" : {
         "method" : "code",
         "message" : "None"

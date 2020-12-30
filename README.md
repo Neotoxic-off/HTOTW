@@ -10,42 +10,31 @@ pip3 install -r requirements.txt
 
 ## Usage
 ```
-usage: HTOTW.py [-h] -u USERNAME [-a]
+usage: HTOTW.py [-h] -u USERNAME [-a] [-o OUTPUT]
 
 All commands availables
 
 optional arguments:
   -h, --help            show this help message and exit
   -a, --adult           Check the adult hosts
+  -o OUTPUT, --output OUTPUT
+                        Name of the ouput file
 
 Required settings:
   -u USERNAME, --username USERNAME
                         Username to hunt
+
 ```
 
-## Example
+## Examples
 ```
 python3 HTOTW.py -u username
 ```
-
-```go
-888  888 888888888 88888888 888888888 8d8   d88
-88888888    '88d   888  888    '88d   888,o.d88
-88P  888   '888    888  888   '888    888P`Y8b8
-88P  888 '88p      888oo888 '88p      88P   YP8
-
-Hunt Target On The Web 0.1.0
-
-loading settings...
-loading hosts...
-Starting the hunt...
-
-[1/5] ✗ twitch
-[2/5] ✓ github
-[3/5] ✓ youtube
-[4/5] ✓ instagram
-[5/5] ✗ twitter
-
+```
+python3 HTOTW.py -u username -a
+```
+```
+python3 HTOTW.py -u username -o myfile.txt
 ```
 
 ## Modules modification

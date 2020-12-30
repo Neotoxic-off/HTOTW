@@ -1,6 +1,6 @@
 {
     "method" : "GET",
-    "url" : "https://facebook.com/",
+    "url" : "https://facebook.com/{}",
     "error" : {
         "method" : "code",
         "message" : "None"

@@ -1,6 +1,6 @@
 {
     "method" : "GET",
-    "url" : "https://mobile.twitter.com/",
+    "url" : "https://mobile.twitter.com/{}",
     "error" : {
         "method" : "data",
         "message" : "not found"

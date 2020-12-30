@@ -1,6 +1,6 @@
 {
     "method" : "GET",
-    "url" : "https://www.twitch.tv/",
+    "url" : "https://www.twitch.tv/{}",
     "error" : {
         "method" : "data",
         "message" : "not found"

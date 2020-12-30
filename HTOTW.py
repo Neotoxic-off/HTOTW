@@ -3,6 +3,7 @@
 import json
 import requests
 import argparse
+import datetime
 
 from src import loaders
 from src import verify
@@ -16,9 +17,17 @@ class settings:
     hosts = None
     username = None
     configuration = None
+    output = None
 
 class host:
     settings = None
+
+class searches:
+    ok = 0
+    error = 0
+
+def time():
+    return ("%s%s%s" % (colors.get("green", 3), datetime.datetime.now().strftime("%H:%M:%S"), colors.get("reset", 0)))
 
 def load_settings():
     logs.load("loading settings...")
@@ -42,26 +51,39 @@ def do_request(method, headers, url):
         return (requests.put(url, headers = headers))
     return (requests.post(url, headers = headers))
 
-def search(count, name, user):
-    result = do_request(host.settings["method"], host.settings["header"], ("%s%s" % (host.settings["url"], user)))
+def search(name, user):
+    url = "%s" % host.settings["url"].replace("{}", user)
+    result = do_request(host.settings["method"], host.settings["header"], url)
     verification = verify.check(host.settings["error"]["method"], host.settings["error"]["message"], result)
 
     if (verification == 1):
-        logs.result_used(count, name, settings.settings["status"]["ok"])
+        logs.result_used("%s  | " % time(), name, settings.settings["status"]["ok"])
+        searches.ok += 1
     else:
-        logs.result_free(count, name, settings.settings["status"]["error"])
+        logs.result_free("%s  | " % time(), name, settings.settings["status"]["error"])
+        searches.error += 1
+
+    if (settings.output != None):
+        f = open(settings.output, "a")
+        f.write(f"{url}\n")
+        f.close()
 
 def engine(user):
     total = len(settings.hosts)
+    logs.action("Running the hunt...\n")
 
-    logs.action("Starting the hunt...\n")
     for i in range(total):
         load_host_configuration(f"modules/{settings.hosts[i]}")
         if (host.settings["adult"] == 1):
             if (settings.adult == True):
-                search(f"[{i + 1}/{total}]", settings.hosts[i], user)
+                search(settings.hosts[i], user)
         else:
-            search(f"[{i + 1}/{total}]", settings.hosts[i], user)            
+            search(settings.hosts[i], user)
+    if (searches.ok > 1):
+        char = 's'
+    else:
+        char = ''
+    print(f"\n{user} found on {searches.ok} website{char}")
 
 def arguments():
     parser = argparse.ArgumentParser()
@@ -69,9 +91,11 @@ def arguments():
     required_settings = parser.add_argument_group("Required settings")
     required_settings.add_argument("-u", "--username", action = "store",   help = "Username to hunt", required = True)
     parser.add_argument("-a", "--adult", action = "store_true", help = "Check the adult hosts", default = False)
+    parser.add_argument("-o", "--output", action = "store", help = "Name of the ouput file", default = None)
     args = parser.parse_args()
     settings.adult = args.adult
     settings.username = args.username
+    settings.output = args.output
 
 def header():
     banner.load()

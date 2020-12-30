@@ -1,6 +1,6 @@
 {
     "method" : "GET",
-    "url" : "https://github.com/",
+    "url" : "https://github.com/{}",
     "error" : {
         "method" : "code",
         "message" : "None"

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import json
-import requests
 import argparse
 import datetime
 
@@ -10,6 +9,7 @@ from src import verify
 from src import colors
 from src import banner
 from src import logs
+from src import requester
 
 class settings:
     adult = None
@@ -44,16 +44,9 @@ def load_hosts():
 def load_host_configuration(module):
     host.settings = loaders.host_configuration(module)
 
-def do_request(method, headers, url):
-    if (method == "GET"):
-        return (requests.get(url, headers = headers))
-    if (method == "PUT"):
-        return (requests.put(url, headers = headers))
-    return (requests.post(url, headers = headers))
-
 def search(name, user):
     url = "%s" % host.settings["url"].replace("{}", user)
-    result = do_request(host.settings["method"], host.settings["header"], url)
+    result = requester.do_request(host.settings["error"]["method"], host.settings["method"], host.settings["header"], url)
     verification = verify.check(host.settings["error"]["method"], host.settings["error"]["message"], result)
 
     if (verification == 1):
@@ -108,4 +101,5 @@ def main():
     load_hosts()
     engine(settings.username)
 
-main()
+if (__name__ == "__main__"):
+    main()

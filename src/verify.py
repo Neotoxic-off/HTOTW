@@ -6,7 +6,7 @@ def code(result):
     return (-1)
 
 def data(message, result):
-    return (-1)
+    return (1)
 
 def check(method, message, result):
     if (method == "code"):

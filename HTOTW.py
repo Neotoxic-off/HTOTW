@@ -83,7 +83,7 @@ def engine(user):
         char = 's'
     else:
         char = ''
-    print(f"\n{user} found on {searches.ok} website{char}")
+    print(f"\n{user} founded on {searches.ok} website{char}")
 
 def arguments():
     parser = argparse.ArgumentParser()

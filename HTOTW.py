@@ -24,41 +24,53 @@ class HTOTW_LOAD:
     def settings():
         try:
             search_settings.settings = loaders.settings()
-            logs.loading("loading settings...")
+            logs.loading("settings")
         except Exception:
-            logs.error("loading settings...")
+            logs.error("settings")
 
     def configuration():
         try:
-            search_settings.settings = loaders.configuration()
-            logs.loading("loading configuration...")
+            search_settings.configuration = loaders.configuration()
+            logs.loading("configuration")
         except Exception:
-            logs.error("loading configuration...")
+            logs.error("configuration")
 
     def modules():
         try:
             modules.content = loaders.modules()
-            logs.loading("loading modules...")
+            logs.loading("modules")
         except Exception:
-            logs.error("loading modules...")
+            logs.error("modules")
     
     def engine():
         try:
             access = engine.HTOTW_ENGINE()
             if (access):
-                logs.loading("loading engine...")
+                logs.loading("engine")
                 return (access)
             else:
-                logs.error("loading engine...")
+                logs.error("engine")
         except Exception:
-            logs.error("loading engine...")
+            logs.error("engine")
 
 def arguments():
     parser = argparse.ArgumentParser()
     parser = argparse.ArgumentParser(description = "All commands availables")
     required_settings = parser.add_argument_group("Required settings")
-    required_settings.add_argument("-u", "--username", action = "store",   help = "Username to hunt", required = True)
-    parser.add_argument("-a", "--adult", action = "store_true", help = "Check the adult hosts", default = False)
+    required_settings.add_argument(
+        "-u",
+        "--username",
+        action = "store",
+        help = "Username to hunt",
+        required = True
+    )
+    parser.add_argument(
+        "-a",
+        "--adult",
+        action = "store_true",
+        help = "Check the adult hosts",
+        default = False
+    )
     args = parser.parse_args()
     search_settings.adult = args.adult
     search_settings.username = args.username
@@ -72,9 +84,14 @@ def main():
     arguments()
     header()
     load.settings()
+    load.configuration()
     load.modules()
     engine_access = load.engine()
-    engine_access.run(modules = modules.content, settings = search_settings, username = search_settings.username)
+    engine_access.run(
+        modules = modules.content,
+        settings = search_settings,
+        username = search_settings.username
+    )
 
 if (__name__ == "__main__"):
     main()

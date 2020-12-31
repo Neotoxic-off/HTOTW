@@ -11,21 +11,24 @@ class search_settings:
     adult = None
 
 class HTOTW_RESULT:
-    def code(self, result):
-        if (result.status_code == 200):
+    def code(self, result, name, settings):
+        success_code = name["error"]["code"]["ok"]
+
+        if (result.status_code == settings.configuration["status_code"][success_code]):
             return (1)
         return (-1)
 
     def data(self, message, result):
         return (1)
 
-    def check(self, method, message, result):
+    def check(self, method, message, result, name, settings):
         if (method == "code"):
-            return (self.code(result))
-
+            return (self.code(result, name, settings))
         if (method == "data"):
             return (self.data(message, result))
+
         logs.error(f"No verification method for '{method}'")
+
         return (-1)
 
 class HTOTW_ENGINE:
@@ -39,7 +42,7 @@ class HTOTW_ENGINE:
             self.display(name = name, logo = settings.settings["status"]["error"], color = "red")
 
     def adult(self, host, settings):
-        if (host["adult"] == 1):
+        if (host["adult"] == True):
             if (settings.adult == True):
                 return (1)
             return (-1)
@@ -49,11 +52,22 @@ class HTOTW_ENGINE:
         htotw_result = HTOTW_RESULT()
         url = "%s" % name["url"].replace("{}", username)
         result = requester.do_request(name["error"]["method"], name["method"], name["header"], url)
-        verification = htotw_result.check(name["error"]["method"], name["error"]["message"], result)
+        verification = htotw_result.check(
+            method = name["error"]["method"],
+            message = name["error"]["message"],
+            result = result,
+            name = name,
+            settings = settings
+        )
 
-        self.check(name = name["name"], verification = verification, settings = settings)
+        self.check(
+            name = name["name"],
+            verification = verification,
+            settings = settings
+        )
 
     def run(self, modules, settings, username):
+        logs.log("Total websites: %d" % len(modules.keys()))
         logs.action("starting the hunt...")
 
         for host in modules.keys():

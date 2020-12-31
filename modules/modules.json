@@ -5,12 +5,15 @@
         "url" : "https://facebook.com/{}",
         "error" : {
             "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
             "message" : "None"
         },
         "header" : {
             "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
         },
-        "adult" : 0
+        "adult" : false
     },
     "github" : {
         "method" : "GET",
@@ -18,12 +21,15 @@
         "url" : "https://github.com/{}",
         "error" : {
             "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
             "message" : "None"
         },
         "header" : {
             "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
         },
-        "adult" : 0
+        "adult" : false
     },
     "instagram" : {
         "method" : "GET",
@@ -31,12 +37,15 @@
         "url" : "https://www.instagram.com/{}",
         "error" : {
             "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
             "message" : "None"
         },
         "header" : {
             "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
         },
-        "adult" : 0
+        "adult" : false
     },
     "medium" : {
         "method" : "GET",
@@ -44,12 +53,15 @@
         "url" : "https://{}.medium.com/",
         "error" : {
             "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
             "message" : "None"
         },
         "header" : {
             "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
         },
-        "adult" : 0
+        "adult" : false
     },
     "pinterest" : {
         "method" : "GET",
@@ -57,12 +69,15 @@
         "url" : "https://www.pinterest.fr/{}/",
         "error" : {
             "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
             "message" : "None"
         },
         "header" : {
             "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
         },
-        "adult" : 0
+        "adult" : false
     },
     "reddit" : {
         "method" : "GET",
@@ -70,12 +85,15 @@
         "url" : "https://www.reddit.com/user/{}",
         "error" : {
             "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
             "message" : "None"
         },
         "header" : {
             "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
         },
-        "adult" : 0
+        "adult" : false
     },
     "tiktok" : {
         "method" : "GET",
@@ -83,12 +101,15 @@
         "url" : "https://www.tiktok.com/@{}",
         "error" : {
             "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
             "message" : "None"
         },
         "header" : {
             "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
         },
-        "adult" : 0
+        "adult" : false
     },
     "tumblr" : {
         "method" : "GET",
@@ -96,12 +117,15 @@
         "url" : "https://{}.tumblr.com/",
         "error" : {
             "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
             "message" : "None"
         },
         "header" : {
             "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
         },
-        "adult" : 0
+        "adult" : false
     },
     "twitch" : {
         "method" : "GET",
@@ -109,12 +133,15 @@
         "url" : "https://www.twitch.tv/{}",
         "error" : {
             "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
             "message" : "None"
         },
         "header" : {
             "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
         },
-        "adult" : 0
+        "adult" : false
     },
     "twitter" : {
         "method" : "GET",
@@ -122,12 +149,15 @@
         "url" : "https://mobile.twitter.com/{}",
         "error" : {
             "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
             "message" : "None"
         },
         "header" : {
             "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
         },
-        "adult" : 0
+        "adult" : false
     },
     "youtube" : {
         "method" : "GET",
@@ -135,11 +165,142 @@
         "url" : "https://www.youtube.com/user/{}",
         "error" : {
             "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
             "message" : "None"
         },
         "header" : {
             "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
         },
-        "adult" : 0
+        "adult" : false
+    },
+    "taringa" : {
+        "method" : "GET",
+        "name" : "taringa",
+        "url" : "https://www.taringa.net/{}",
+        "error" : {
+            "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : false
+    },
+    "myspace" : {
+        "method" : "GET",
+        "name" : "myspace",
+        "url" : "https://myspace.com/{}",
+        "error" : {
+            "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : false
+    },
+    "soundcloud" : {
+        "method" : "GET",
+        "name" : "soundcloud",
+        "url" : "https://soundcloud.com/{}",
+        "error" : {
+            "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : false
+    },
+    "deviantart" : {
+        "method" : "GET",
+        "name" : "deviantart",
+        "url" : "https://www.deviantart.com/{}",
+        "error" : {
+            "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : false
+    },
+    "weheartit" : {
+        "method" : "GET",
+        "name" : "weheartit",
+        "url" : "https://weheartit.com/{}",
+        "error" : {
+            "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : false
+    },
+    "vimeo" : {
+        "method" : "GET",
+        "name" : "vimeo",
+        "url" : "https://vimeo.com/{}",
+        "error" : {
+            "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : false
+    },
+    "giphy" : {
+        "method" : "GET",
+        "name" : "giphy",
+        "url" : "https://giphy.com/{}",
+        "error" : {
+            "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : false
+    },
+    "imgur" : {
+        "method" : "GET",
+        "name" : "imgur",
+        "url" : "https://imgur.com/user/{}",
+        "error" : {
+            "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : false
     }
 }

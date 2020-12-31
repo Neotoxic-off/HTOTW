@@ -16,18 +16,23 @@ def error(message):
         colors.get("reset", 0)))
 
 def loading(message):
-    print("%s  | %s%s%s" % (
+    print("%s  | %sloading %s...%s" % (
         time.get(), 
         colors.get("cyan", 0),
         message,
         colors.get("reset", 0)))
 
-def result(name, logo, color):
-    print("%s  | %s%s%s %s%s%s" % (
+def log(message):
+    print("%s  | %s%s%s" % (
         time.get(), 
-        colors.get(color, 1),
-        logo,
-        colors.get("reset", 0),
+        colors.get("purple", 0),
+        message,
+        colors.get("reset", 0)))
+
+def result(name, logo, color):
+    print("%s  | %s%s %s%s" % (
+        time.get(), 
         colors.get(color, 0),
+        logo,
         name,
         colors.get("reset", 0)))

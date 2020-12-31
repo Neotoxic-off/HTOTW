@@ -42,21 +42,24 @@ python3 HTOTW.py -u username -a
 - `"method" : "data"` data error will check result content (**in progress**)
 - `"message" : "None"` the message will try to be grabbed in the result content in data mod only
 - `header` the header is the headers content to send during the request
-- `"adult" : 0` if you consider that's an adult website put a 1 else put a 0
-if you don't use the `-a` the adult website won't be displayed
+- `"adult" : false` if you consider that's an adult website set as true else false
+if you don't use the `-a` the adult website won't be tested
 
 ```
 {
-    "method" : "GET",
-    "nale" : "<URL>",
-    "url" : "<HOST URL>",
+  "method" : "GET",
+    "name" : "google",
+    "url" : "https://google.com/{}",
     "error" : {
         "method" : "code",
+        "code" : {
+            "ok" : "ok"
+        },
         "message" : "None"
     },
     "header" : {
         "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
     },
-    "adult" : 0
+    "adult" : false
 }
 ```

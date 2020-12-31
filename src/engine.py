@@ -54,7 +54,7 @@ class HTOTW_ENGINE:
         self.check(name = name["name"], verification = verification, settings = settings)
 
     def run(self, modules, settings, username):
-        logs.action("\nSTARTING THE HUNT...\n")
+        logs.action("starting the hunt...")
 
         for host in modules.keys():
             if (self.adult(host = modules[host], settings = settings) != -1):

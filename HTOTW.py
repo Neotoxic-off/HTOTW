@@ -20,27 +20,38 @@ class search_settings:
 class modules:
     content = None
 
-class searches:
-    ok = 0
-    error = 0
-
-
 class HTOTW_LOAD:
     def settings():
-        logs.loading("loading settings...")
-        search_settings.settings = loaders.settings()
+        try:
+            search_settings.settings = loaders.settings()
+            logs.loading("loading settings...")
+        except Exception:
+            logs.error("loading settings...")
 
     def configuration():
-        logs.loading("loading configuration...")
-        search_settings.settings = loaders.configuration()
+        try:
+            search_settings.settings = loaders.configuration()
+            logs.loading("loading configuration...")
+        except Exception:
+            logs.error("loading configuration...")
 
     def modules():
-        logs.loading("loading modules...")
-        modules.content = loaders.modules()
+        try:
+            modules.content = loaders.modules()
+            logs.loading("loading modules...")
+        except Exception:
+            logs.error("loading modules...")
     
     def engine():
-        logs.loading("loading engine...")
-        return (engine.HTOTW_ENGINE())
+        try:
+            access = engine.HTOTW_ENGINE()
+            if (access):
+                logs.loading("loading engine...")
+                return (access)
+            else:
+                logs.error("loading engine...")
+        except Exception:
+            logs.error("loading engine...")
 
 def arguments():
     parser = argparse.ArgumentParser()

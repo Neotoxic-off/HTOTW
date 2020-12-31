@@ -32,14 +32,14 @@ class HTOTW_RESULT:
         return (-1)
 
 class HTOTW_ENGINE:
-    def display(self, name, logo, color):
-        logs.result(name = name, logo = logo, color = color)
+    def display(self, special, name, logo, color):
+        logs.result(special = special, name = name, logo = logo, color = color)
     
-    def check(self, name, verification, settings):
+    def check(self, special, name, verification, settings):
         if (verification == 1):
-            self.display(name = name, logo = settings.settings["status"]["ok"], color = "green")
+            self.display(special = special, name = name, logo = settings.settings["status"]["ok"], color = "green")
         else:
-            self.display(name = name, logo = settings.settings["status"]["error"], color = "red")
+            self.display(special = special, name = name, logo = settings.settings["status"]["error"], color = "red")
 
     def adult(self, host, settings):
         if (host["adult"] == True):
@@ -47,19 +47,24 @@ class HTOTW_ENGINE:
                 return (1)
             return (-1)
         return (0)
+    
+    def group(self, i, total):    
+        if (total > 1):
+            if (i == 0):
+                return ('┌')
+            elif (i == total - 1):
+                return ('└')
+            else:
+                return ('│')
+        return ('')
 
     def search(self, name, settings, username):
         htotw_result = HTOTW_RESULT()
         urls = len(name["url"])
-        full_name = name["name"]
+        special = None
 
         for i in range(urls):
-            if (urls > 1):
-                full_name = " [%d/%d] %s" % (
-                    i,
-                    urls,
-                    name["name"],
-                )
+            special = self.group(i, urls)
             request_url = "%s" % name["url"][i].replace("{}", username)
             result = requester.do_request(name["error"]["method"], name["method"], name["header"], request_url)
             verification = htotw_result.check(
@@ -70,7 +75,8 @@ class HTOTW_ENGINE:
                 settings = settings
             )
             self.check(
-                name = full_name,
+                special = special,
+                name = name["name"],
                 verification = verification,
                 settings = settings
             )

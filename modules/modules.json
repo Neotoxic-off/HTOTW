@@ -360,5 +360,44 @@
             "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
         },
         "adult" : true
+    },
+    "xvideos" : {
+        "method" : "GET",
+        "name" : "xvideos",
+        "url" : [
+            "https://www.xvideos.com/profiles/{}",
+            "https://www.xvideos.com/pornstar-channels/{}",
+            "https://www.xvideos.com/amateur-channels/{}",
+            "https://www.xvideos.com/channels/{}"
+        ],
+        "error" : {
+            "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : true
+    },
+    "chaturbate" : {
+        "method" : "GET",
+        "name" : "chaturbate",
+        "url" : [
+            "https://www.chaturbate.com/{}"
+        ],
+        "error" : {
+            "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : true
     }
 }

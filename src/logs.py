@@ -29,10 +29,13 @@ def log(message):
         message,
         colors.get("reset", 0)))
 
-def result(name, logo, color):
-    print("%s  | %s%s %s%s" % (
-        time.get(), 
+def result(special, name, logo, color):
+    print("%s  | %s%s %s%s%s %s%s" % (
+        time.get(),
         colors.get(color, 0),
         logo,
+        colors.get("reset", 0),
+        special,
+        colors.get(color, 0),
         name,
         colors.get("reset", 0)))

@@ -2,7 +2,9 @@
     "facebook" : {
         "method" : "GET",
         "name" : "facebook",
-        "url" : "https://facebook.com/{}",
+        "url" : [
+            "https://facebook.com/{}"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -18,7 +20,9 @@
     "github" : {
         "method" : "GET",
         "name" : "github",
-        "url" : "https://github.com/{}",
+        "url" : [
+            "https://github.com/{}"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -34,7 +38,9 @@
     "instagram" : {
         "method" : "GET",
         "name" : "instagram",
-        "url" : "https://www.instagram.com/{}",
+        "url" : [
+            "https://www.instagram.com/{}"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -50,7 +56,9 @@
     "medium" : {
         "method" : "GET",
         "name" : "medium",
-        "url" : "https://{}.medium.com/",
+        "url" : [
+            "https://{}.medium.com/"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -66,7 +74,9 @@
     "pinterest" : {
         "method" : "GET",
         "name" : "pinterest",
-        "url" : "https://www.pinterest.fr/{}/",
+        "url" : [
+            "https://www.pinterest.fr/{}/"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -82,7 +92,9 @@
     "reddit" : {
         "method" : "GET",
         "name" : "reddit",
-        "url" : "https://www.reddit.com/user/{}",
+        "url" : [
+            "https://www.reddit.com/user/{}"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -98,7 +110,9 @@
     "tiktok" : {
         "method" : "GET",
         "name" : "tiktok",
-        "url" : "https://www.tiktok.com/@{}",
+        "url" : [
+            "https://www.tiktok.com/@{}"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -114,7 +128,9 @@
     "tumblr" : {
         "method" : "GET",
         "name" : "tumblr",
-        "url" : "https://{}.tumblr.com/",
+        "url" : [
+            "https://{}.tumblr.com/"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -130,7 +146,9 @@
     "twitch" : {
         "method" : "GET",
         "name" : "twitch",
-        "url" : "https://www.twitch.tv/{}",
+        "url" : [
+            "https://www.twitch.tv/{}"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -146,7 +164,9 @@
     "twitter" : {
         "method" : "GET",
         "name" : "twitter",
-        "url" : "https://mobile.twitter.com/{}",
+        "url" : [
+            "https://mobile.twitter.com/{}"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -162,7 +182,9 @@
     "youtube" : {
         "method" : "GET",
         "name" : "youtube",
-        "url" : "https://www.youtube.com/user/{}",
+        "url" : [
+            "https://www.youtube.com/user/{}"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -178,7 +200,9 @@
     "taringa" : {
         "method" : "GET",
         "name" : "taringa",
-        "url" : "https://www.taringa.net/{}",
+        "url" : [
+            "https://www.taringa.net/{}"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -194,7 +218,9 @@
     "myspace" : {
         "method" : "GET",
         "name" : "myspace",
-        "url" : "https://myspace.com/{}",
+        "url" : [
+            "https://myspace.com/{}"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -210,7 +236,9 @@
     "soundcloud" : {
         "method" : "GET",
         "name" : "soundcloud",
-        "url" : "https://soundcloud.com/{}",
+        "url" : [
+            "https://soundcloud.com/{}"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -226,7 +254,9 @@
     "deviantart" : {
         "method" : "GET",
         "name" : "deviantart",
-        "url" : "https://www.deviantart.com/{}",
+        "url" : [
+            "https://www.deviantart.com/{}"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -242,7 +272,9 @@
     "weheartit" : {
         "method" : "GET",
         "name" : "weheartit",
-        "url" : "https://weheartit.com/{}",
+        "url" : [
+            "https://weheartit.com/{}"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -258,7 +290,9 @@
     "vimeo" : {
         "method" : "GET",
         "name" : "vimeo",
-        "url" : "https://vimeo.com/{}",
+        "url" : [
+            "https://vimeo.com/{}"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -274,7 +308,9 @@
     "giphy" : {
         "method" : "GET",
         "name" : "giphy",
-        "url" : "https://giphy.com/{}",
+        "url" : [
+            "https://giphy.com/{}"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -290,7 +326,9 @@
     "imgur" : {
         "method" : "GET",
         "name" : "imgur",
-        "url" : "https://imgur.com/user/{}",
+        "url" : [
+            "https://imgur.com/user/{}"
+        ],
         "error" : {
             "method" : "code",
             "code" : {
@@ -302,5 +340,25 @@
             "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
         },
         "adult" : false
+    },
+    "pornhub" : {
+        "method" : "GET",
+        "name" : "pornhub",
+        "url" : [
+            "https://www.pornhub.com/users/{}",
+            "https://www.pornhub.com/pornstar/{}",
+            "https://www.pornhub.com/model/{}"
+        ],
+        "error" : {
+            "method" : "code",
+            "code" : {
+                "ok" : "ok"
+            },
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : true
     }
 }

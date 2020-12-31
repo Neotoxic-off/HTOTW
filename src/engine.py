@@ -50,25 +50,34 @@ class HTOTW_ENGINE:
 
     def search(self, name, settings, username):
         htotw_result = HTOTW_RESULT()
-        url = "%s" % name["url"].replace("{}", username)
-        result = requester.do_request(name["error"]["method"], name["method"], name["header"], url)
-        verification = htotw_result.check(
-            method = name["error"]["method"],
-            message = name["error"]["message"],
-            result = result,
-            name = name,
-            settings = settings
-        )
+        urls = len(name["url"])
+        full_name = name["name"]
 
-        self.check(
-            name = name["name"],
-            verification = verification,
-            settings = settings
-        )
+        for i in range(urls):
+            if (urls > 1):
+                full_name = " [%d/%d] %s" % (
+                    i,
+                    urls,
+                    name["name"],
+                )
+            request_url = "%s" % name["url"][i].replace("{}", username)
+            result = requester.do_request(name["error"]["method"], name["method"], name["header"], request_url)
+            verification = htotw_result.check(
+                method = name["error"]["method"],
+                message = name["error"]["message"],
+                result = result,
+                name = name,
+                settings = settings
+            )
+            self.check(
+                name = full_name,
+                verification = verification,
+                settings = settings
+            )
 
     def run(self, modules, settings, username):
-        logs.log("Total websites: %d" % len(modules.keys()))
-        logs.action("starting the hunt...")
+        logs.log("total websites: %d" % len(modules.keys()))
+        logs.action("starting the hunt...\n")
 
         for host in modules.keys():
             if (self.adult(host = modules[host], settings = settings) != -1):

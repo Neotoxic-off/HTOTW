@@ -37,7 +37,8 @@ python3 HTOTW.py -u username -a
 - The name of the module file is important !
 - `"method" : "GET"` modify the method type to grab the informations
 - `"name" : "<HOST>"` enter the name of the website example: `google`
-- `"url" : "<HOST URL>"` enter the url of the website example: `https://google.com`
+- `"url" : ["<HOST URL>"]` enter the urls of the website, it must be an array !
+example: `https://google.com`
 - `"method" : "code"` code error type will check the status code of the page
 - `"method" : "data"` data error will check result content (**in progress**)
 - `"message" : "None"` the message will try to be grabbed in the result content in data mod only
@@ -49,7 +50,9 @@ if you don't use the `-a` the adult website won't be tested
 {
   "method" : "GET",
     "name" : "google",
-    "url" : "https://google.com/{}",
+    "url" : [
+      "https://google.com/{}"
+    ],
     "error" : {
         "method" : "code",
         "code" : {

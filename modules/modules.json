@@ -1,0 +1,145 @@
+{
+    "facebook" : {
+        "method" : "GET",
+        "name" : "facebook",
+        "url" : "https://facebook.com/{}",
+        "error" : {
+            "method" : "code",
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : 0
+    },
+    "github" : {
+        "method" : "GET",
+        "name" : "github",
+        "url" : "https://github.com/{}",
+        "error" : {
+            "method" : "code",
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : 0
+    },
+    "instagram" : {
+        "method" : "GET",
+        "name" : "instagram",
+        "url" : "https://www.instagram.com/{}",
+        "error" : {
+            "method" : "code",
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : 0
+    },
+    "medium" : {
+        "method" : "GET",
+        "name" : "medium",
+        "url" : "https://{}.medium.com/",
+        "error" : {
+            "method" : "code",
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : 0
+    },
+    "pinterest" : {
+        "method" : "GET",
+        "name" : "pinterest",
+        "url" : "https://www.pinterest.fr/{}/",
+        "error" : {
+            "method" : "code",
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : 0
+    },
+    "reddit" : {
+        "method" : "GET",
+        "name" : "reddit",
+        "url" : "https://www.reddit.com/user/{}",
+        "error" : {
+            "method" : "code",
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : 0
+    },
+    "tiktok" : {
+        "method" : "GET",
+        "name" : "tiktok",
+        "url" : "https://www.tiktok.com/@{}",
+        "error" : {
+            "method" : "code",
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : 0
+    },
+    "tumblr" : {
+        "method" : "GET",
+        "name" : "tumblr",
+        "url" : "https://{}.tumblr.com/",
+        "error" : {
+            "method" : "code",
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : 0
+    },
+    "twitch" : {
+        "method" : "GET",
+        "name" : "twitch",
+        "url" : "https://www.twitch.tv/{}",
+        "error" : {
+            "method" : "code",
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : 0
+    },
+    "twitter" : {
+        "method" : "GET",
+        "name" : "twitter",
+        "url" : "https://mobile.twitter.com/{}",
+        "error" : {
+            "method" : "code",
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : 0
+    },
+    "youtube" : {
+        "method" : "GET",
+        "name" : "youtube",
+        "url" : "https://www.youtube.com/user/{}",
+        "error" : {
+            "method" : "code",
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : 0
+    }
+}

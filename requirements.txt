@@ -1,2 +1,2 @@
 argparse
-requests
+requests-futures

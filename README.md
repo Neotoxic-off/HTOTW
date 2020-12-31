@@ -17,8 +17,6 @@ All commands availables
 optional arguments:
   -h, --help            show this help message and exit
   -a, --adult           Check the adult hosts
-  -o OUTPUT, --output OUTPUT
-                        Name of the ouput file
 
 Required settings:
   -u USERNAME, --username USERNAME
@@ -33,14 +31,12 @@ python3 HTOTW.py -u username
 ```
 python3 HTOTW.py -u username -a
 ```
-```
-python3 HTOTW.py -u username -o myfile.txt
-```
 
 ## Modules modification
 
 - The name of the module file is important !
 - `"method" : "GET"` modify the method type to grab the informations
+- `"name" : "<HOST>"` enter the name of the website example: `google`
 - `"url" : "<HOST URL>"` enter the url of the website example: `https://google.com`
 - `"method" : "code"` code error type will check the status code of the page
 - `"method" : "data"` data error will check result content (**in progress**)
@@ -52,6 +48,7 @@ if you don't use the `-a` the adult website won't be displayed
 ```
 {
     "method" : "GET",
+    "nale" : "<URL>",
     "url" : "<HOST URL>",
     "error" : {
         "method" : "code",

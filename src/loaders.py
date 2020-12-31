@@ -11,8 +11,10 @@ def configuration():
         data = json.load(f)
     return (data)
 
-def hosts():
-    return (os.listdir("modules"))
+def modules():
+    with open("modules/modules.json", 'r') as f:
+        data = json.load(f)
+    return (data)
 
 def host_configuration(module):
     with open(module, 'r') as f:

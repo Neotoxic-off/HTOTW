@@ -14,13 +14,11 @@ from src import requester
 class settings:
     adult = None
     settings = None
-    hosts = None
     username = None
     configuration = None
-    output = None
 
-class host:
-    settings = None
+class modules:
+    content = None
 
 class searches:
     ok = 0
@@ -37,41 +35,31 @@ def load_configuration():
     logs.load("loading configuration...")
     settings.settings = loaders.configuration()
 
-def load_hosts():
-    logs.load("loading hosts...")
-    settings.hosts = loaders.hosts()
-
-def load_host_configuration(module):
-    host.settings = loaders.host_configuration(module)
+def load_modules():
+    logs.load("loading modules...")
+    modules.content = loaders.modules()
 
 def search(name, user):
-    url = "%s" % host.settings["url"].replace("{}", user)
-    result = requester.do_request(host.settings["error"]["method"], host.settings["method"], host.settings["header"], url)
-    verification = verify.check(host.settings["error"]["method"], host.settings["error"]["message"], result)
+    url = "%s" % name["url"].replace("{}", user)
+    result = requester.do_request(name["error"]["method"], name["method"], name["header"], url)
+    verification = verify.check(name["error"]["method"], name["error"]["message"], result)
 
     if (verification == 1):
-        logs.result_used("%s  | " % time(), name, settings.settings["status"]["ok"])
+        logs.result_used("%s  | " % time(), name["name"], settings.settings["status"]["ok"])
         searches.ok += 1
     else:
-        logs.result_free("%s  | " % time(), name, settings.settings["status"]["error"])
+        logs.result_free("%s  | " % time(), name["name"], settings.settings["status"]["error"])
         searches.error += 1
 
-    if (settings.output != None):
-        f = open(settings.output, "a")
-        f.write(f"{url}\n")
-        f.close()
-
 def engine(user):
-    total = len(settings.hosts)
-    logs.action("Running the hunt...\n")
+    logs.action("\nSTARTING THE HUNT...\n")
 
-    for i in range(total):
-        load_host_configuration(f"modules/{settings.hosts[i]}")
-        if (host.settings["adult"] == 1):
+    for host in modules.content.keys():
+        if (modules.content[host]["adult"] == 1):
             if (settings.adult == True):
-                search(settings.hosts[i], user)
+                search(modules.content[host], user)
         else:
-            search(settings.hosts[i], user)
+            search(modules.content[host], user)
     if (searches.ok > 1):
         char = 's'
     else:
@@ -84,11 +72,9 @@ def arguments():
     required_settings = parser.add_argument_group("Required settings")
     required_settings.add_argument("-u", "--username", action = "store",   help = "Username to hunt", required = True)
     parser.add_argument("-a", "--adult", action = "store_true", help = "Check the adult hosts", default = False)
-    parser.add_argument("-o", "--output", action = "store", help = "Name of the ouput file", default = None)
     args = parser.parse_args()
     settings.adult = args.adult
     settings.username = args.username
-    settings.output = args.output
 
 def header():
     banner.load()
@@ -98,7 +84,7 @@ def main():
     arguments()
     header()
     load_settings()
-    load_hosts()
+    load_modules()
     engine(settings.username)
 
 if (__name__ == "__main__"):

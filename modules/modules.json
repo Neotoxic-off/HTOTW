@@ -2,12 +2,15 @@
     "facebook" : {
         "method" : "GET",
         "name" : "facebook",
+        "origin" : "https://facebook.com/",
+        "timeout" : 5,
         "url" : [
             "https://facebook.com/{}"
         ],
         "error" : {
-            "method" : "nfjdk",
+            "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -20,12 +23,15 @@
     "github" : {
         "method" : "GET",
         "name" : "github",
+        "origin" : "https://github.com/",
+        "timeout" : 5,
         "url" : [
             "https://github.com/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -38,12 +44,15 @@
     "instagram" : {
         "method" : "GET",
         "name" : "instagram",
+        "origin" : "https://www.instagram.com/",
+        "timeout" : 5,
         "url" : [
             "https://www.instagram.com/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -56,12 +65,15 @@
     "medium" : {
         "method" : "GET",
         "name" : "medium",
+        "origin" : "https://www.medium.com/",
+        "timeout" : 5,
         "url" : [
             "https://{}.medium.com/"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -74,12 +86,15 @@
     "pinterest" : {
         "method" : "GET",
         "name" : "pinterest",
+        "origin" : "https://www.pinterest.com/",
+        "timeout" : 5,
         "url" : [
-            "https://www.pinterest.fr/{}/"
+            "https://www.pinterest.com/{}/"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -92,12 +107,15 @@
     "reddit" : {
         "method" : "GET",
         "name" : "reddit",
+        "origin" : "https://www.reddit.com/",
+        "timeout" : 5,
         "url" : [
             "https://www.reddit.com/user/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -110,12 +128,15 @@
     "tiktok" : {
         "method" : "GET",
         "name" : "tiktok",
+        "origin" : "https://www.tiktok.com/",
+        "timeout" : 5,
         "url" : [
             "https://www.tiktok.com/@{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -128,12 +149,15 @@
     "tumblr" : {
         "method" : "GET",
         "name" : "tumblr",
+        "origin" : "https://www.tumblr.com/",
+        "timeout" : 5,
         "url" : [
             "https://{}.tumblr.com/"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -146,12 +170,15 @@
     "twitch" : {
         "method" : "GET",
         "name" : "twitch",
+        "origin" : "https://www.twitch.com/",
+        "timeout" : 5,
         "url" : [
             "https://www.twitch.tv/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -164,12 +191,15 @@
     "twitter" : {
         "method" : "GET",
         "name" : "twitter",
+        "origin" : "https://mobile.twitter.com/",
+        "timeout" : 5,
         "url" : [
             "https://mobile.twitter.com/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -182,12 +212,15 @@
     "youtube" : {
         "method" : "GET",
         "name" : "youtube",
+        "origin" : "https://www.youtube.com/",
+        "timeout" : 5,
         "url" : [
             "https://www.youtube.com/user/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -200,12 +233,15 @@
     "taringa" : {
         "method" : "GET",
         "name" : "taringa",
+        "origin" : "https://www.taringa.com/",
+        "timeout" : 5,
         "url" : [
             "https://www.taringa.net/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -218,12 +254,15 @@
     "myspace" : {
         "method" : "GET",
         "name" : "myspace",
+        "origin" : "https://myspace.com/",
+        "timeout" : 5,
         "url" : [
             "https://myspace.com/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -236,12 +275,15 @@
     "soundcloud" : {
         "method" : "GET",
         "name" : "soundcloud",
+        "origin" : "https://www.soundcloud.com/",
+        "timeout" : 5,
         "url" : [
             "https://soundcloud.com/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -254,12 +296,15 @@
     "deviantart" : {
         "method" : "GET",
         "name" : "deviantart",
+        "origin" : "https://www.deviantart.com/",
+        "timeout" : 5,
         "url" : [
             "https://www.deviantart.com/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -272,12 +317,15 @@
     "weheartit" : {
         "method" : "GET",
         "name" : "weheartit",
+        "origin" : "https://weheartit.com/",
+        "timeout" : 5,
         "url" : [
             "https://weheartit.com/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -290,12 +338,15 @@
     "vimeo" : {
         "method" : "GET",
         "name" : "vimeo",
+        "origin" : "https://vimeo.com/",
+        "timeout" : 5,
         "url" : [
             "https://vimeo.com/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -308,12 +359,15 @@
     "giphy" : {
         "method" : "GET",
         "name" : "giphy",
+        "origin" : "https://giphy.com/",
+        "timeout" : 5,
         "url" : [
             "https://giphy.com/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -326,12 +380,15 @@
     "imgur" : {
         "method" : "GET",
         "name" : "imgur",
+        "origin" : "https://imgur.com/",
+        "timeout" : 5,
         "url" : [
             "https://imgur.com/user/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -344,6 +401,8 @@
     "pornhub" : {
         "method" : "GET",
         "name" : "pornhub",
+        "origin" : "https://www.pornhub.com/",
+        "timeout" : 5,
         "url" : [
             "https://www.pornhub.com/users/{}",
             "https://www.pornhub.com/pornstar/{}",
@@ -352,6 +411,7 @@
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -364,6 +424,8 @@
     "xvideos" : {
         "method" : "GET",
         "name" : "xvideos",
+        "origin" : "https://www.xvideos.com/",
+        "timeout" : 5,
         "url" : [
             "https://www.xvideos.com/profiles/{}",
             "https://www.xvideos.com/pornstar-channels/{}",
@@ -373,6 +435,7 @@
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -385,12 +448,15 @@
     "chaturbate" : {
         "method" : "GET",
         "name" : "chaturbate",
+        "origin" : "https://chaturbate.com/",
+        "timeout" : 5,
         "url" : [
             "https://chaturbate.com/{}/"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -403,12 +469,15 @@
     "camsoda" : {
         "method" : "GET",
         "name" : "camsoda",
+        "origin" : "https://www.camsoda.com/",
+        "timeout" : 5,
         "url" : [
             "https://www.camsoda.com/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -421,6 +490,8 @@
     "xhamster" : {
         "method" : "GET",
         "name" : "xhamster",
+        "origin" : "https://xhamster.com/",
+        "timeout" : 5,
         "url" : [
             "https://xhamster.com/users/{}",
             "https://xhamster.com/channels/{}",
@@ -430,6 +501,7 @@
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -442,12 +514,15 @@
     "onlyfans" : {
         "method" : "GET",
         "name" : "onlyfans",
+        "origin" : "https://onlyfans.com/",
+        "timeout" : 5,
         "url" : [
             "https://onlyfans.com/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"
@@ -460,12 +535,15 @@
     "cam4" : {
         "method" : "GET",
         "name" : "cam4",
+        "origin" : "https://www.cam4.com/",
+        "timeout" : 5,
         "url" : [
             "https://www.cam4.com/{}"
         ],
         "error" : {
             "method" : "status_code",
             "status_code" : {
+                "default" : "ok",
                 "ok" : "ok"
             },
             "message" : "None"

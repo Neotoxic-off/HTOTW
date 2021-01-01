@@ -16,6 +16,7 @@ class search_settings:
     settings = None
     username = None
     configuration = None
+    status = False
 
 class modules:
     content = None
@@ -71,9 +72,17 @@ def arguments():
         help = "Check the adult hosts",
         default = False
     )
+    parser.add_argument(
+        "-s",
+        "--status",
+        action = "store_true",
+        help = "Check hosts status",
+        default = False
+    )
     args = parser.parse_args()
     search_settings.adult = args.adult
     search_settings.username = args.username
+    search_settings.status = args.status
 
 def header():
     banner.load()

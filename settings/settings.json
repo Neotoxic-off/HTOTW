@@ -2,5 +2,9 @@
     "status" : {
         "ok" : "✓",
         "error" : "✗"
+    },
+    "down" : {
+        "ok" : "↑",
+        "error" : "↓"
     }
 }

@@ -70,6 +70,10 @@
         "hunt" : {
             "start" : "starting the hunt...",
             "end" : "hunt finished"
+        },
+        "down" : {
+            "start" : "checking hosts status...",
+            "end" : "status checked"
         }
     },
     "HTOTW_RESULT" : {
@@ -79,8 +83,8 @@
             }
         },
         "resume" : {
-            "dead" : "websites down: {}",
-            "found" : "user: '{}' founded on [] links"
+            "down" : "websites down: {}",
+            "found" : "username: '{}' founded on [] links"
         }
     }
 }

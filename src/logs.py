@@ -6,7 +6,13 @@ def action(message):
         time.get(), 
         colors.get("blue", 0),
         message,
-        colors.get("reset", 0)))
+        colors.get("reset", 0)), end = "\n\n")
+
+def resume(message):
+    print("%s%s%s" % (
+        colors.get("purple", 0),
+        message,
+        colors.get("reset", 0)), end = "\n\n")
 
 def error(message):
     print("%s  | %s%s%s" % (

@@ -63,5 +63,24 @@
         "loop_detected" : 508,
         "not_extended" : 510,
         "network_authentication_required" : 511
+    },
+    "HTOTW_ENGINE" : {
+        "total_hosts" : "total hosts: {}",
+        "total_links" : "total links: {}",
+        "hunt" : {
+            "start" : "starting the hunt...",
+            "end" : "hunt finished"
+        }
+    },
+    "HTOTW_RESULT" : {
+        "verification" : {
+            "method" : {
+                "unknown" : "Unknown verification method: '[]' for '{}'"
+            }
+        },
+        "resume" : {
+            "dead" : "websites down: {}",
+            "found" : "user: '{}' founded on [] links"
+        }
     }
 }

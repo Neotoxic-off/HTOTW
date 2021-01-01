@@ -81,6 +81,7 @@ def header():
 
 def main():
     load = HTOTW_LOAD
+
     arguments()
     header()
     load.settings()

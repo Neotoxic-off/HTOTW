@@ -6,7 +6,7 @@
             "https://facebook.com/{}"
         ],
         "error" : {
-            "method" : "status_code",
+            "method" : "nfjdk",
             "status_code" : {
                 "ok" : "ok"
             },

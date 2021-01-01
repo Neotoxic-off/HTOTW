@@ -386,7 +386,7 @@
         "method" : "GET",
         "name" : "chaturbate",
         "url" : [
-            "https://www.chaturbate.com/{}"
+            "https://chaturbate.com/{}/"
         ],
         "error" : {
             "method" : "code",

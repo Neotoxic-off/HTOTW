@@ -39,8 +39,8 @@ python3 HTOTW.py -u username -a
 - `"name" : "<HOST>"` enter the name of the website example: `google`
 - `"url" : ["<HOST URL>"]` enter the urls of the website, it must be an array !
 example: `https://google.com`
-- `"method" : "code"` code error type will check the status code of the page
-- `"method" : "data"` data error will check result content (**in progress**)
+- `"method" : "status_code"` status_code error type will check the status code of the page
+- `"method" : "text"` text error will check result content (**in progress**)
 - `"message" : "None"` the message will try to be grabbed in the result content in data mod only
 - `header` the header is the headers content to send during the request
 - `"adult" : false` if you consider that's an adult website set as true else false
@@ -54,8 +54,8 @@ if you don't use the `-a` the adult website won't be tested
       "https://google.com/{}"
     ],
     "error" : {
-        "method" : "code",
-        "code" : {
+        "method" : "status_code",
+        "status_code" : {
             "ok" : "ok"
         },
         "message" : "None"

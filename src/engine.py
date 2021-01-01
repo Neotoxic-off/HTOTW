@@ -24,7 +24,7 @@ class HTOTW_RESULT:
     def check(self, method, message, result, name, settings):
         if (method == "status_code"):
             return (self.code(result, name, settings))
-        if (method == "data"):
+        if (method == "text"):
             return (self.data(message, result))
         logs.error(f"No verification method for '{method}'")
         return (-1)

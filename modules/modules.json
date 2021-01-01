@@ -23,7 +23,7 @@
     "github" : {
         "method" : "GET",
         "name" : "github",
-        "origin" : "https://github.com/",
+        "origin" : "https://github.com/Neotoxic-off",
         "timeout" : 5,
         "url" : [
             "https://github.com/{}"

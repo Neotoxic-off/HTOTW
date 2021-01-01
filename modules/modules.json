@@ -6,8 +6,8 @@
             "https://facebook.com/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -24,8 +24,8 @@
             "https://github.com/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -42,8 +42,8 @@
             "https://www.instagram.com/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -60,8 +60,8 @@
             "https://{}.medium.com/"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -78,8 +78,8 @@
             "https://www.pinterest.fr/{}/"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -96,8 +96,8 @@
             "https://www.reddit.com/user/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -114,8 +114,8 @@
             "https://www.tiktok.com/@{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -132,8 +132,8 @@
             "https://{}.tumblr.com/"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -150,8 +150,8 @@
             "https://www.twitch.tv/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -168,8 +168,8 @@
             "https://mobile.twitter.com/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -186,8 +186,8 @@
             "https://www.youtube.com/user/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -204,8 +204,8 @@
             "https://www.taringa.net/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -222,8 +222,8 @@
             "https://myspace.com/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -240,8 +240,8 @@
             "https://soundcloud.com/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -258,8 +258,8 @@
             "https://www.deviantart.com/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -276,8 +276,8 @@
             "https://weheartit.com/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -294,8 +294,8 @@
             "https://vimeo.com/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -312,8 +312,8 @@
             "https://giphy.com/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -330,8 +330,8 @@
             "https://imgur.com/user/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -350,8 +350,8 @@
             "https://www.pornhub.com/model/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -371,8 +371,8 @@
             "https://www.xvideos.com/channels/{}"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"
@@ -389,8 +389,83 @@
             "https://chaturbate.com/{}/"
         ],
         "error" : {
-            "method" : "code",
-            "code" : {
+            "method" : "status_code",
+            "status_code" : {
+                "ok" : "ok"
+            },
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : true
+    },
+    "camsoda" : {
+        "method" : "GET",
+        "name" : "camsoda",
+        "url" : [
+            "https://www.camsoda.com/{}"
+        ],
+        "error" : {
+            "method" : "status_code",
+            "status_code" : {
+                "ok" : "ok"
+            },
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : true
+    },
+    "xhamster" : {
+        "method" : "GET",
+        "name" : "xhamster",
+        "url" : [
+            "https://xhamster.com/users/{}",
+            "https://xhamster.com/channels/{}",
+            "https://xhamster.com/pornstars/{}",
+            "https://xhamsterlive.com/{}"
+        ],
+        "error" : {
+            "method" : "status_code",
+            "status_code" : {
+                "ok" : "ok"
+            },
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : true
+    },
+    "onlyfans" : {
+        "method" : "GET",
+        "name" : "onlyfans",
+        "url" : [
+            "https://onlyfans.com/{}"
+        ],
+        "error" : {
+            "method" : "status_code",
+            "status_code" : {
+                "ok" : "ok"
+            },
+            "message" : "None"
+        },
+        "header" : {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+        },
+        "adult" : true
+    },
+    "cam4" : {
+        "method" : "GET",
+        "name" : "cam4",
+        "url" : [
+            "https://www.cam4.com/{}"
+        ],
+        "error" : {
+            "method" : "status_code",
+            "status_code" : {
                 "ok" : "ok"
             },
             "message" : "None"

@@ -12,7 +12,7 @@ class search_settings:
 
 class HTOTW_RESULT:
     def code(self, result, name, settings):
-        success_code = name["error"]["code"]["ok"]
+        success_code = name["error"]["status_code"]["ok"]
 
         if (result.status_code == settings.configuration["status_code"][success_code]):
             return (1)
@@ -22,13 +22,11 @@ class HTOTW_RESULT:
         return (1)
 
     def check(self, method, message, result, name, settings):
-        if (method == "code"):
+        if (method == "status_code"):
             return (self.code(result, name, settings))
         if (method == "data"):
             return (self.data(message, result))
-
         logs.error(f"No verification method for '{method}'")
-
         return (-1)
 
 class HTOTW_ENGINE:
